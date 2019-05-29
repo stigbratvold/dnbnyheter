@@ -79,7 +79,7 @@ input, textarea, select {
 @media screen and (min-width: 769px) {
   .grid {
     display: grid;
-    grid-gap: 24px;
+    grid-column-gap: 24px;
     grid-template-columns: 2fr 8fr 2fr;
     grid-template-areas: "....... header  ......." "sidebar content .......";
   }
@@ -222,7 +222,6 @@ blockquote {
 }
 body {
   background-color: #fff;
-  border-top: 24px solid #007272;
 }
 
 p {
@@ -299,7 +298,61 @@ a:hover {
   }
 }
 .article {
-  margin-top: 140px;
+  margin-top: 0;
+}
+
+.heroImage img {
+  margin-top: 48px;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.72);
+  margin-top: 8px;
+}
+figcaption span {
+  display: block;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.nav {
+  margin-top: 0;
+  background-color: #007273;
+  font-size: 14px;
+  height: 32px;
+  line-height: 34px;
+}
+.nav ul {
+  width: 100%;
+  max-width: 1448px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+  display: flex;
+}
+@media screen and (min-width: 450px) {
+  .nav ul {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+.nav a {
+  color: #C2DCDC;
+  margin: 0 24px;
+  border: none;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+}
+.nav a:first-child {
+  margin-left: 0;
+}
+.nav a.active {
+  color: #fff;
+  border-color: #A5E1D2;
+}
+.nav a:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

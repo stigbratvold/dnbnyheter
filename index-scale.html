@@ -6,21 +6,33 @@
     <title>DNB Sans - Test</title>
 
     <link rel="stylesheet" href="app.css">
+
+  <style>
+    h1, h2, h3, h4, h5 {
+      font-weight: 700;
+    }
+    @media screen and (min-width: 600px) {
+      h1, h2, h3, h4, h5 {
+        font-weight: 500;
+      }
+    }
+  </style>
+
   </head>
   <body>
 
     <nav class="nav">
       <ul>
-        <li><a class="active" href="index.html">Medium</a></li>
+        <li><a href="index.html">Medium</a></li>
         <li><a href="index-bold.html">Bold</a></li>
-        <li><a href="index-scale.html">Scale</a></li>
+        <li><a class="active" href="index-scale.html">Scale</a></li>
       </ul>
     </nav>
 
     <section class="wrap">
       <div class="articleIntro">
         <p class="category finance">Børs og marked</p>
-        <p class="lead">Denne testen bruker Medium på titler</p>
+        <p class="lead">Denne testen bruker Medium på desktop og Bold på mobil</p>
         <h1>Følger Kina med argusøyne</h1>
       </div>
 
@@ -31,6 +43,7 @@
          <source srcset="imagetest_mobile.jpg 2x,
                imagetest_mobile.jpg 1x" />
          <img src="imagetest.jpg" alt="Image Test" />
+         <figcaption>Nå er ICE notert på Oslo Axess. Henning Karlsrud (til høyre), CFO i ICE Group, har besøkt TV-studioet til DNB for å snakke om vekstplaner og markedsutsiktene.<span>Foto: Stig Fiksdal</span></figcaption>
       </picture>
 
     </section>

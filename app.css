@@ -222,6 +222,7 @@ blockquote {
 }
 body {
   background-color: #fff;
+  border-top: 24px solid #007272;
 }
 
 p {

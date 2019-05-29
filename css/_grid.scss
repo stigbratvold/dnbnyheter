@@ -1,0 +1,24 @@
+.sidebar {
+	grid-area: sidebar;
+}
+.content {
+	grid-area: content;
+}
+.grid {
+	display: block;
+}
+@media screen and (min-width: 769px) {
+	.grid {
+	  display: grid;
+	  grid-gap: 24px;
+	  grid-template-columns: 2fr  8fr  2fr;
+	  grid-template-areas:
+	             "....... header  ......."
+	             "sidebar content .......";
+	}
+}
+@media screen and (min-width: 900px) {
+  .grid {
+    grid-template-columns: 3fr  6fr  3fr;
+  }
+}

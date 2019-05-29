@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'DNB Sans';
+    src: url('fonts/DNB-47-090-Regular.eot');
+    src: url('fonts/DNB-47-090-Regular.eot?#iefix')
+           format('embedded-opentype'),
+         url('fonts/DNB-47-090-Regular.woff2') format('woff2'),
+         url('fonts/DNB-47-090-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DNB Sans';
+    src: url('fonts/DNB-47-120-Medium.eot');
+    src: url('fonts/DNB-47-120-Medium.eot?#iefix')
+           format('embedded-opentype'),
+         url('fonts/DNB-47-120-Medium.woff2') format('woff2'),
+         url('fonts/DNB-47-120-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DNB Sans';
+    src: url('fonts/DNB-47-150-Bold.eot');
+    src: url('fonts/DNB-47-150-Bold.eot?#iefix')
+           format('embedded-opentype'),
+         url('fonts/DNB-47-150-Bold.woff2') format('woff2'),
+         url('fonts/DNB-47-150-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DNB Sans';
+    src: url('fonts/DNB-47-060-Light.eot');
+    src: url('fonts/DNB-47-060-Light.eot?#iefix')
+           format('embedded-opentype'),
+         url('fonts/DNB-47-060-Light.woff2') format('woff2'),
+         url('fonts/DNB-47-060-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+html {
+  font-family:'DNB Sans';
+  font-size: 100%;
+  font-size: 1vw;
+  -webkit-text-size-adjust: 100%;
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+
+body {
+  font-family:'DNB Sans';
+  font-size: 16px;
+	line-height: 1.5;
+	color: #000;
+}
+
+
+.intro {
+  font-size: 18px;
+  max-width: 592px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+h1, h2, h3 {
+  color: #000;
+  line-height: 1;
+  font-weight: 500;
+}
+blockquote {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    font-size: calc(16px + (20 - 16) * ((100vw - 450px) / (1448 - 450)));
+  }
+  .intro {
+    font-size: calc(18px + (20 - 18) * ((100vw - 450px) / (1448 - 450)));
+  }
+  h1 {
+    font-size: calc(32px + (60 - 32) * ((100vw - 450px) / (1448 - 450)));
+  }
+  h2 {
+    font-size: calc(20px + (32 - 20) * ((100vw - 450px) / (1448 - 450)));
+  }
+  h3 {
+    font-size: calc(18px + 6 * ((100vw - 450px) / 1350));
+  }
+  blockquote {
+    font-size: calc(28px + (48 - 28) * ((100vw - 450px) / (1448 - 450)));
+  }
+}
+
+@media screen and (min-width: 1448px) {
+  body {
+    font-size: 20px;
+  }
+  .intro {
+    font-size: 22px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  blockquote {
+    font-size: 48px;
+  }
+}

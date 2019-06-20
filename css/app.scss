@@ -77,12 +77,22 @@ figcaption {
 
 .sidebar {
   font-size: 16px;
-  span {
+  > span {
     display: block;
     opacity: 0.54;
+
+    @media screen and (min-width: 900px) {
+      &:nth-child(2) {
+        margin-top: 24px;
+      }
+      span {
+        display: block;
+      }
+    }
+
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 900px) {
     font-size: 14px;
     padding: 16px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
